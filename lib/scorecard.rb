@@ -1,7 +1,9 @@
 class Scorecard
   attr_accessor :score
-  def initialize(score = 0)
-    @score = 0
+  attr_accessor :bonus
+  def initialize(score = 0, bonus=false)
+    @score = score
+    @bonus = bonus
   end
   def roll(pins)
     handlescore(pins)

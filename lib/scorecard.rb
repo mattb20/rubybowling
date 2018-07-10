@@ -1,8 +1,9 @@
+require 'frames'
 class Scorecard
   attr_accessor :score
   attr_accessor :bonus
   def initialize(score = 0, bonus=false)
-    @score = score
+    @gamescore = score
     @bonus = bonus
   end
   def roll(pins)
@@ -10,6 +11,10 @@ class Scorecard
   end
   private
   def handlescore(pins)
-    @score += pins
+    case pins
+    when 10
+      @bonus = true
+      @score +
+    end
   end
 end

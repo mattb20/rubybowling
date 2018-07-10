@@ -4,6 +4,10 @@ class Scorecard
     @score = 0
   end
   def roll(pins)
+    handlescore(pins)
+  end
+  private
+  def handlescore(pins)
     @score += pins
   end
 end

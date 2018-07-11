@@ -1,5 +1,6 @@
 require 'scorecard'
 describe Scorecard do
+  let(:frame){double('frame')};
   it ('should have a method to return the score') do
     scorecard = Scorecard.new
     expect(scorecard.score).to eq 0;

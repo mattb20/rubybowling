@@ -14,6 +14,7 @@ class Scorecard
   end
   private
   def handlescore(pins)
+    self.current_frame.frame.push(pins)
   end
 
 

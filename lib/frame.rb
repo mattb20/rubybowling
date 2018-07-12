@@ -3,7 +3,7 @@ class Frame
   def initialize(frame = [])
     @frame = frame
   end
-  def calculate(frame)
+  def calculatescore(frame)
     frame.reduce(:+);
   end
 end

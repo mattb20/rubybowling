@@ -13,5 +13,10 @@ describe Frame do
       frame.frame = [1,2,2,2];
       expect(frame.calculatescore(frame.frame)).to eq 7;
     end
+    it('should be complete after two scores are added') do
+      frame = Frame.new;
+      frame.frame = [1,2];
+      expect(frame.is_complete?).to eq true;
+    end
   end
 end

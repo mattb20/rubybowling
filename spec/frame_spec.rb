@@ -15,7 +15,7 @@ describe Frame do
     end
     it('should be able to toggle completeness attribute by calling complete method') do
       frame = Frame.new
-      expect(frame.complete).to eq true;
+      expect(frame.completed).to eq true;
     end
   end
 end

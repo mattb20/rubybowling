@@ -1,12 +1,14 @@
 class Frame
   attr_accessor :frame
-  def initialize(frame = [])
+  attr_accessor :complete
+  def initialize(frame = [], complete = false)
     @frame = frame
+    @complete = complete
   end
   def calculatescore(frame)
     frame.reduce(:+);
   end
-  def is_complete?
-    
+  def completed
+    self.complete = true;
   end
 end

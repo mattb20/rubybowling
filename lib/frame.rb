@@ -6,4 +6,7 @@ class Frame
   def calculatescore(frame)
     frame.reduce(:+);
   end
+  def is_complete?
+    
+  end
 end
